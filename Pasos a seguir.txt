@@ -1,0 +1,24 @@
+Creación de las carpetas contracts, js y frontend y dentro los archivos
+Ejecución de npm init -y para que nos cree el package.json
+Instalamos la librería npm i web3 (donde se crea la carpeta node_modules y las referencias a web3)
+Instalamos con npm i solc
+Instalamos solamente para desarrollo con npm i --save-dev lite-server
+Cambiamos los "scripts", donde quitaremos el test y meteremos el compile, el dev y el deploy
+
+Lo primero que vamos a hacer es:
+1. Ir a Micontrato.sol y programar
+2. Programar el compile.js
+3. Instalamos truffle con npm i truffle-hdwallet-provider (módulo que va a proporcionar un nodo de conexión y una wallet para hacer las llamadas)
+4. Programar el deploy.js
+5. Instalar con npm i bootstrap
+6. Hacer el index.html
+7. Hacer el style.css
+9. Hacer el index.js
+
+Para COMPILAR un nuevo contrato
+1. npm run deploy
+2. truffle migrate --reset
+3. truffle console
+4. truffle networks
+5. Cambiar la dirección de contrato nuevo en el index.js
+6. Probamos con npm run dev

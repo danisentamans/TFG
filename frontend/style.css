@@ -1,0 +1,403 @@
+/* Estilos personalizados para la cartera */
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table thead th {
+  background-color: #f2f9fe;
+  color: #236fa1;
+  font-weight: bold;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f8fafd;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e9f3fb;
+}
+
+.info {
+  display: none;
+}
+
+#descripcionPopUpFruta,
+#descripcionPopUpHortaliza,
+#descripcionPopUpLegumbre {
+  padding: 5px 10px;
+  border: none;
+  background-color: #0f8bff;
+  color: white;
+  cursor: pointer;
+}
+
+#descripcionPopUpFruta:hover,
+#descripcionPopUpHortaliza:hover,
+#descripcionPopUpLegumbre:hover {
+  background-color: #0c6ebd;
+}
+
+
+/* Botón "Conectar MetaMask" */
+#enabledEthereumButton {
+  font-weight: bold;
+}
+
+/* Input "Dirección de destino" */
+#direccionBeneficiaria {
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+/* Botón "Transferir" */
+#transferir {
+  border-radius: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Cartel de fondo azul con el balance actual */
+#balance {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #00bfff;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.wider-input {
+  width: 150px; /* Puedes ajustar el valor del ancho según tus necesidades */
+}
+
+
+/* Estilos para los mensajes ocultos */
+.oculto {
+  display: none;
+}
+
+/* Estilo para el mensaje de bienvenida */
+.welcome-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.welcome-message.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.welcome-message i {
+  font-size: 48px;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.welcome-message h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.welcome-message p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .welcome-message {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .welcome-message h2 {
+    font-size: 24px;
+  }
+
+  .welcome-message p {
+    font-size: 16px;
+  }
+}
+
+/* Estilo para el input */
+.modern-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.modern-span {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #00bfff;
+  background-color: #f5faff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.modern-span:focus {
+  border-color: #0088ff;
+  box-shadow: 0 0 5px rgba(0, 136, 255, 0.3);
+}
+
+.modern-span::placeholder {
+  color: #999;
+}
+
+.modern-span:-ms-input-placeholder {
+  color: #999;
+}
+
+.modern-span::-ms-input-placeholder {
+  color: #999;
+}
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Estilos para el select */
+  #productSelect {
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  #product1 option:first-child {
+    font-weight: bold;
+  }
+  
+  .info {
+    /* border: 1px solid black; */
+    padding: 5px;
+    width: 1200px;
+  }
+
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  th, td {
+    border: 1px solid #3f3d3d;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #6d6d6d;
+    font-weight: bold;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #a5a5a5;
+  }
+
+  select {
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #575757;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #productsTable {
+    display: none;
+  }
+
+  #transferForm{
+    display: none;
+  }
+
+  #btnGetBalance{
+    display: none;
+  }
+
+  #btnGetHistory{
+    display: none;
+    margin-left: 40px;
+  }
+
+  #btnShowPDF{
+    display: none;
+    margin-left: 40px;
+  }
+
+  #btnDownloadPDF{
+    display: none;
+    margin-left: 40px;
+  }
+
+  #btnIPFS{
+    display: none;
+    margin-left: 40px;
+  }
+
+  /* #showBalance{
+    display: none;
+  } */
+  .showBalance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  
+  .showBalance.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .showBalance span {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .showBalance {
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+    .showBalance span {
+      font-size: 16px;
+    }
+  }
+  
+  
+  #descripcionPopUpFruta{
+    display: none;
+  }
+
+  #descripcionPopUpHortaliza{
+    display: none;
+  }
+
+  #descripcionPopUpLegumbre{
+    display: none;
+  }
+
+/* Estilos para el pop-up */
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.pop-up h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pop-up p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Estilos para el botón de cerrar */
+.pop-up__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pop-up__close:hover {
+  transform: rotate(180deg);
+}
+
+/* Estilos para el fondo oscuro detrás del pop-up */
+.pop-up__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.pop-up__overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

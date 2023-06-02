@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Uploader</title>
+    <meta http-equiv="content-type" content="text-html; charset=UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-field {
+        margin-bottom: 20px;
+      }
+
+      .form-field label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-field input[type="file"] {
+        padding: 10px;
+      }
+
+      .form-field button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Estilos CSS para el popup */
+      #popup {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+      }
+
+      #message {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      #popup button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Subir archivo a IPFS</h1>
+      <form action="/file" method="POST" enctype="multipart/form-data">
+        <div class="form-field">
+          <label for="doc">Seleccionar archivo:</label>
+          <input type="file" name="doc" id="doc" required />
+        </div>
+        <button type="submit" onclick="goToHomePage()">Subir</button>
+      </form>
+    </div>
+    <div id="popup">
+      <p id="message"></p>
+      <button><span id="countdown"></span></button>
+    </div>
+
+    <script>
+      function showMessage() {
+        const getMessage = document.getElementById("message");
+        getMessage.innerHTML =
+          "Se ha generado correctamente el archivo con la tecnología IPFS, esta página se cerrará en 10 segundos";
+        const getPopUp = document.getElementById("popup");
+        getPopUp.style.display = "flex";
+      }
+
+      function closeWindow() {
+        window.close();
+      }
+
+      function updateCountdown(seconds) {
+        const countdownElement = document.getElementById("countdown");
+        countdownElement.textContent = seconds;
+      }
+
+      function goToHomePage() {
+        showMessage();
+        let secondsLeft = 10;
+        updateCountdown(secondsLeft);
+
+        const countdownInterval = setInterval(() => {
+          secondsLeft--;
+          updateCountdown(secondsLeft);
+
+          if (secondsLeft <= 0) {
+            clearInterval(countdownInterval);
+            closeWindow();
+          }
+        }, 1000); // Actualizar la cuenta atrás cada segundo (1000 milisegundos)
+      }
+
+      // Aquí puedes agregar el código necesario para hacer la solicitud al servidor
+      // y llamar a la función showMessage con el hash obtenido
+
+      // ...
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+        }
+        
+        th, td {
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+          text-align: left;
+          font-weight: bold;
+        }
+        
+        .invoice-container {
+          max-width: 600px;
+          margin: 0 auto;
+          background-color: #f7f7f7;
+          padding: 40px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .invoice-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 30px;
+        }
+        
+        .invoice-header img {
+          max-width: 100px;
+        }
+        
+        .invoice-details {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+        }
+        
+        .invoice-details div {
+          flex-basis: 50%;
+        }
+        
+        .invoice-details .label {
+          color: #999;
+          margin-bottom: 5px;
+        }
+        
+        .invoice-details .value {
+          font-weight: bold;
+        }
+      </style>
+    
+      <title>Mi factura IPFS</title>
+      
+      <div class="invoice-container">
+        <div class="invoice-header">
+        <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="Logo" style="width: 200px; margin-left: 60px; margin-right: 40px;">
+      <h1 class="text-center">Factura compra</h1>
+      <img src="logo.png" alt="Logo" style="width: 200px; margin-left: 40px;">
+    </div>
+        </div>
+        
+        <div class="invoice-details">
+          <div>
+            <div class="label">Producto:</div>
+            <div class="value">berenjena</div>
+          </div>
+          <div>
+            <div class="label">Precio el kg:</div>
+            <div class="value">1.20€/kg</div>
+          </div>
+        </div>
+    
+        <div class="invoice-details">
+          <div>
+            <div class="label">Cantidad comprada:</div>
+            <div class="value">15</div>
+          </div>
+          <div>
+            <div class="label">Total a pagar en ETH:</div>
+            <div class="value">0.010751403655477243</div>
+          </div>
+        </div>
+    
+        <div class="invoice-details">
+        <div>
+          <div class="label">Trazabilidad:</div>
+          <div class="value">Descripción: Berenjena. Variedad: Cristal. Categoría II.  Empaquetado: Malla de plástico Procedencia: La Puebla de Vícar (entidad de población),Vícar,Almería (provincia),Andalucía,España</div>
+        </div>
+      </div>
+        
+        <div class="invoice-details">
+          <div>
+            <div class="label">Dirección:</div>
+            <div class="value">0xFcaDDBf45118ed1606eE1F121b95DD1eBd1e4CC7</div>
+          </div>
+        </div>
+        </div>
+    
